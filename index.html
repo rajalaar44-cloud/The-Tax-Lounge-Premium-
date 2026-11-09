@@ -1,0 +1,588 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The Tax Lounge | Ghulam Murtaza Laar</title>
+<meta name="description" content="Professional Tax, Legal, Tax Refund and Business Registration Services by Ghulam Murtaza Laar, Advocate & Tax Consultant.">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --navy: #081b35;
+    --navy-light: #12375c;
+    --gold: #d5ae62;
+    --light: #f5f7fa;
+    --text: #263449;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--light);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+/* HEADER */
+
+header {
+    background: var(--navy);
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: var(--gold);
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(130deg, var(--navy), var(--navy-light));
+    color: white;
+    text-align: center;
+    padding: 110px 20px;
+}
+
+.hero-label {
+    color: var(--gold);
+    letter-spacing: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    color: var(--gold);
+    font-size: clamp(36px, 6vw, 56px);
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.hero h2 {
+    font-size: 27px;
+    margin-bottom: 5px;
+}
+
+.designation {
+    color: var(--gold);
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    color: #e0e8f2;
+    font-size: 16px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 28px;
+    background: var(--gold);
+    color: var(--navy);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 25px;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+/* GENERAL SECTIONS */
+
+.section {
+    padding: 80px 7%;
+    text-align: center;
+}
+
+.section-title {
+    color: var(--navy);
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.gold-line {
+    width: 65px;
+    height: 4px;
+    background: var(--gold);
+    margin: 0 auto 25px;
+}
+
+.section-intro {
+    max-width: 720px;
+    margin: auto;
+    color: #687487;
+}
+
+/* SERVICES */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 24px;
+    margin-top: 45px;
+}
+
+.service-card {
+    background: white;
+    padding: 32px 22px;
+    border-radius: 12px;
+    border: 1px solid #e8eaf0;
+    border-bottom: 4px solid var(--gold);
+    box-shadow: 0 6px 20px rgba(7,26,51,.06);
+    transition: .3s;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 28px rgba(7,26,51,.12);
+}
+
+.service-icon {
+    width: 65px;
+    height: 65px;
+    background: #f4efe3;
+    color: #a98237;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.service-icon svg {
+    width: 30px;
+    height: 30px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.service-card h3 {
+    color: var(--navy);
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #687487;
+    font-size: 14px;
+}
+
+/* ABOUT */
+
+.about {
+    background: white;
+}
+
+.about-box {
+    max-width: 850px;
+    margin: 35px auto 0;
+    padding: 40px;
+    background: var(--light);
+    border-left: 5px solid var(--gold);
+    border-radius: 10px;
+}
+
+.about-box h3 {
+    color: var(--navy);
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.about-role {
+    color: #a98237;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* CONTACT */
+
+.contact {
+    background: var(--navy);
+    color: white;
+}
+
+.contact .section-title {
+    color: var(--gold);
+}
+
+.contact p {
+    margin: 9px 0;
+    color: #e0e8f2;
+}
+
+.contact strong {
+    color: var(--gold);
+}
+
+.contact-number {
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 15px !important;
+}
+
+/* FOOTER */
+
+footer {
+    background: #041020;
+    color: #cbd4df;
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 13px;
+}
+
+footer span {
+    color: var(--gold);
+}
+
+/* WHATSAPP BUTTON */
+
+.whatsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #20bd5a;
+    color: white;
+    padding: 13px 20px;
+    border-radius: 35px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 15px #0003;
+    z-index: 100;
+}
+
+@media(max-width:650px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 80px 18px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .section {
+        padding: 60px 6%;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .about-box {
+        padding: 25px 18px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+    <div class="logo">THE TAX LOUNGE</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+
+<section class="hero" id="home">
+
+    <div class="hero-label">PROFESSIONAL SERVICES</div>
+
+    <h1>THE TAX LOUNGE</h1>
+
+    <h2>Ghulam Murtaza Laar</h2>
+
+    <div class="designation">Advocate &amp; Tax Consultant</div>
+
+    <p>Professional Tax, Legal &amp; Business Registration Services</p>
+
+    <a href="#services" class="btn">Explore Our Services</a>
+
+</section>
+
+<!-- SERVICES -->
+
+<section class="section" id="services">
+
+    <h2 class="section-title">Our Professional Services</h2>
+
+    <div class="gold-line"></div>
+
+    <p class="section-intro">
+        Professional assistance for your taxation, tax refund,
+        legal, corporate and business registration requirements.
+    </p>
+
+    <div class="services-grid">
+
+        <!-- FBR RETURN -->
+
+        <div class="service-card">
+            <div class="service-icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M6 2h9l5 5v15H6z"/>
+                    <path d="M14 2v6h6M9 13h8M9 17h8"/>
+                </svg>
+            </div>
+            <h3>FBR Income Tax Return Filing</h3>
+            <p>Annual Income Tax Return Preparation &amp; Filing.</p>
+        </div>
+
+        <!-- SALES TAX RETURN -->
+
+        <div class="service-card">
+            <div class="service-icon">
+                <svg viewBox="0 0 24 24">
+                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                    <path d="M7 8h10M7 12h10M7 16h5"/>
+                </svg>
+            </div>
+            <h3>Sales Tax Return Filing</h3>
+            <p>Monthly Sales Tax Return Preparation &amp; Filing.</p>
+        </div>
+
+        <!-- NTN -->
+
+        <div class="service-card">
+            <div class="service-icon">
+                <svg viewBox="0 0 24 24">
+                    <rect x="3" y="4" width="18" height="16" rx="2"/>
+                    <circle cx="9" cy="10" r="2"/>
+                    <path d="M6 16c1-3 5-3 6 0M14 9h4M14 13h4"/>
+                </svg>
+            </div>
+            <h3>NTN Registration</h3>
+            <p>New NTN Registration for Individuals &amp; Businesses.</p>
+        </div>
+
+        <!-- SALES TAX REGISTRATION -->
+
+        <div class="service-card">
+            <div class="service-icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M3 21h18M5 21V7l7-4 7 4v14"/>
+                    <path d="M9 10h1M14 10h1M9 14h1M14 14h1"/>
+                </svg>
+            </div>
+            <h3>Sales Tax Registration</h3>
+            <p>Sales Tax Registration &amp; STRN Assistance.</p>
+        </div>
+
+        <!-- NAME CORRECTION -->
+
+        <div class="service-card">
+            <div class="service-icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M4 20h16M7 17l10-10 3 3-10 10H7z"/>
+                </svg>
+            </div>
+            <h3>Name Correction</h3>
+            <p>Correction and Updating of Taxpayer Name Details.</p>
+        </div>
+
+        <!-- TAX REFUNDS -->
+
+        <div class="service-card">
+            <div class="service-icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M3 12a9 9 0 1 0 3-6.7"/>
+                    <path d="M3 4v5h5"/>
+                    <path d="M12 7v10M9 10h5a2 2 0 0 1 0 4h-4"/>
+                </svg>
+            </div>
+            <h3>Tax Refunds &amp; Refund Claim</h3>
+            <p>Assistance with Tax Refund Applications and Refund Claims.</p>
+        </div>
+
+        <!-- BUSINESS ACTIVITY -->
+
+        <div class="service-card">
+            <div class="service-icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M4 20h16M6 17V5h12v12"/>
+                    <path d="M9 9h6M9 13h6"/>
+                </svg>
+            </div>
+            <h3>Business Activity Change</h3>
+            <p>Modification and Updating of Registered Business Activities.</p>
+        </div>
+
+        <!-- SECP -->
+
+        <div class="service-card">
+            <div class="service-icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M3 21h18M5 21V6h14v15"/>
+                    <path d="M9 10h2M14 10h2M9 14h2M14 14h2"/>
+                </svg>
+            </div>
+            <h3>SECP Registration</h3>
+            <p>Company Registration and Corporate Compliance Assistance.</p>
+        </div>
+
+        <!-- IPO TRADEMARK -->
+
+        <div class="service-card">
+            <div class="service-icon">
+                <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="9"/>
+                    <path d="M15 8c-1-2-5-2-6 0-1 2 1 3 3 4s4 2 3 4c-1 2-5 2-6 0"/>
+                    <path d="M12 5v14"/>
+                </svg>
+            </div>
+            <h3>IPO Trademark Registration</h3>
+            <p>Trademark Registration and Intellectual Property Services.</p>
+        </div>
+
+        <!-- PEC -->
+
+        <div class="service-card">
+            <div class="service-icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M3 21h18M5 21l2-9h10l2 9"/>
+                    <path d="M9 12V8a3 3 0 0 1 6 0v4"/>
+                </svg>
+            </div>
+            <h3>PEC Registration</h3>
+            <p>Pakistan Engineering Council Registration &amp; Renewal.</p>
+        </div>
+
+        <!-- PSEB -->
+
+        <div class="service-card">
+            <div class="service-icon">
+                <svg viewBox="0 0 24 24">
+                    <rect x="3" y="4" width="18" height="14" rx="2"/>
+                    <path d="M8 22h8M12 18v4M7 9h10M7 13h6"/>
+                </svg>
+            </div>
+            <h3>PSEB Registration</h3>
+            <p>Pakistan Software Export Board Registration &amp; Assistance.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+
+<section class="section about" id="about">
+
+    <h2 class="section-title">About The Tax Lounge</h2>
+
+    <div class="gold-line"></div>
+
+    <div class="about-box">
+
+        <h3>Ghulam Murtaza Laar</h3>
+
+        <p class="about-role">Advocate &amp; Tax Consultant</p>
+
+        <p>
+            The Tax Lounge provides professional assistance
+            in taxation, tax refunds, legal matters, business
+            registration and regulatory compliance.
+
+            Our focus is on professional service, accuracy
+            and client support.
+        </p>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+
+<section class="section contact" id="contact">
+
+    <h2 class="section-title">Contact Us</h2>
+
+    <div class="gold-line"></div>
+
+    <p><strong>Ghulam Murtaza Laar</strong></p>
+
+    <p>Advocate &amp; Tax Consultant</p>
+
+    <p class="contact-number">03169954175</p>
+
+    <a class="btn"
+       href="https://wa.me/923169954175"
+       target="_blank">
+       Contact on WhatsApp
+    </a>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+    <p>© 2026 <span>The Tax Lounge</span>. All Rights Reserved.</p>
+    <p>Ghulam Murtaza Laar | Advocate &amp; Tax Consultant</p>
+</footer>
+
+<!-- WHATSAPP FLOATING BUTTON -->
+
+<a class="whatsapp"
+   href="https://wa.me/923169954175"
+   target="_blank">
+   WhatsApp
+</a>
+
+</body>
+</html>
